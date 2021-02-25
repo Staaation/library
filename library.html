@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Libray</title>
+    	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<h1 id="header">Library Cards</h1>
+	<div id="btn_container">
+   		<button id='addBtn'>Add Book</button>
+   	</div>
+    <body>
+   		
+   			<div id="popup">
+   				<form id="form" class="popup_form" action='/library.js'>
+   					<span class="close">&times;</span>
+   					<p>Add New Book</p>
+   					<input class="pop_input"
+   					   type="text"
+   					   id="title"
+   					   placeholder="Title"
+   					   required
+   					   />
+   					<input class="pop_input"
+   					   type="text"
+   					   id="author"
+   					   placeholder="Author"
+   					   required 
+   					   />
+   					<input class="pop_input"
+   					   type="number"
+   					   id="pages"
+   					   placeholder="Pages"
+   					   required 
+   					   />
+   					<div class="checkbox">
+   						<label for="is_read">Read?</label>
+   						<input class="pop_checkbox"
+   							type="checkbox"
+   							id="is_read"
+   					    />
+   					</div>
+   					<button class="submit" form="form">Submit</button>
+   				</form>
+   			</div>
+   			<div id="library_content"></div>
+   	    
+   	    <script src="library.js"></script>
+	</body>
+</html>
+

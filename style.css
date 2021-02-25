@@ -1,0 +1,139 @@
+#header {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border: 10px solid rgba(47,47,47,1);
+}
+
+#library{
+	display: flex;
+    
+	justify-content: center;
+	text-align: center;
+}
+
+#popup {
+	display: none;
+	position: fixed;
+	border: 3px solid #f1f1f1;
+	z-index: 1;
+	left: 27rem;
+	border: solid 3px black;
+	top: 5rem;
+
+}
+#btn_container {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#addBtn{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 10px;
+    border: solid 3px black;
+	background-color: rgb(244, 236, 10);
+}
+.popup_form {
+	justify-content: center;
+	max-width: 300px;
+	padding: 10px;
+	background-color: gray;
+	text-align: center;
+}
+
+.popup_form input[type=text], .popup_form input[type=number] {
+	width: 90%;
+	padding: 10px;
+	margin: 5px 0 5px 0;
+	border: solid 3px black;
+	background: #f1f1f1;
+}
+.popup_form .submit {
+	width: 100px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 3px black;
+	background-color: #28E513;
+}
+.close {
+	float: right;
+	font-weight: bold;
+}
+
+#library_content {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.book {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 300px;
+	height: 250px;
+	border: solid 3px black;
+	background-color: gray;
+	margin: 20px;
+	padding: 15px;
+}
+
+#title_text{
+	text-align: center;
+	padding: 2px;
+	height: 3px;
+	font-size: 30px;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#author_text{
+	text-align: center;
+	padding: 2px;
+	height: 3px;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+#pages_text {
+	text-align: center;
+	padding: 2px;
+	height: 3px;
+	font-size: 15px;
+	margin-bottom: 15px;
+}
+#readBtn{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 3px black;
+}
+
+#removeBtn{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid 3px black;
+	background-color: #ff3333
+}
